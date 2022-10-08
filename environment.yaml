@@ -1,0 +1,19 @@
+name: venv
+channels:
+  - pytorch-nightly
+  - conda-forge
+dependencies:
+  - python=3.9.0
+  - pytorch-nightly::pytorch
+  - numpy
+  - tqdm
+  - pydantic
+  - mlflow
+  - albumentations
+  - pip
+  - pip:
+    - click
+    - pytest
+    - pytest-cov
+    - dynaconf
+prefix: ./venv

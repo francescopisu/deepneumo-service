@@ -11,9 +11,11 @@ dependencies:
   - mlflow
   - albumentations
   - pip
+  - pydicom
   - pip:
     - click
     - pytest
     - pytest-cov
     - dynaconf
+    - typing-extensions
 prefix: ./venv

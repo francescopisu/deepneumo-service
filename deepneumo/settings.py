@@ -10,7 +10,6 @@ TARGET_COLUMN = "Target"
 
 IMG_SIZE = (224, 224)
 
-SPLIT_SIZE = (.8, .1, .1)
-SUBSET_NAMES = ("train", "dev", "test")
+SPLIT_SIZE = {"train": .8, "dev": .1, "test": .1}
 
 SEED = 1234

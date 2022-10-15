@@ -1,18 +1,31 @@
 import numpy as np
 import pandas as pd
-from typing import Tuple
+import pydicom
+from typing import Tuple, Dict, Optional
 from sklearn.model_selection import train_test_split
+from tqdm import tqdm
 
 from .._typings import ArrayLike, Seed
 
-def three_way_split(data, size, stratify = None, random_state=None):
-    """_summary_
+__all__ = ["three_way_split"]
 
-    Args:
-        data (_type_): _description_
-        size (_type_): _description_
-        stratify (_type_, optional): _description_. Defaults to None.
-        random_state (_type_, optional): _description_. Defaults to None.
+def three_way_split(data: ArrayLike, size: Dict[str, float], 
+                    stratify: Optional[str] = None, 
+                    random_state: Seed = 0):
+    """
+    Executes a stratified split of a data array in three different subsets 
+    - train, val and test - according to `size`.
+
+    Attributes
+    ----------
+    data: ArrayLike
+        The data array to be split in three.
+    size: Dict[str, float] 
+        Fraction of data array for each of three subsets. Must sum to 1.0.
+    stratify: Optional[str] 
+        The column to stratify the split on. Defaults to None.
+    random_state: Seed: 
+        The seed that controls the shuffling before the split. Defaults to 0.
 
     Raises:
         ValueError: _description_

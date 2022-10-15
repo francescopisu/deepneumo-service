@@ -2,12 +2,7 @@ import pytest
 import logging
 
 from deepneumo.src.utils import data
-
-class Cases:
-    SPLIT_SIZES = [
-        ({'train': 0.8, 'val': 0.1, 'test': 0.1}),
-        ({'train': 0.6, 'val': 0.2, 'test': 0.2})
-    ]
+from conftest import Cases
 
 @pytest.mark.parametrize('dim', [(100, 100), (1000, 100), (5000, 100)])
 @pytest.mark.parametrize('split_size', Cases.SPLIT_SIZES)

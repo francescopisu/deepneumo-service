@@ -21,7 +21,7 @@ def do_training():
 def do_evaluation():
     raise NotImplementedError()
 
-cli.add_command(do_preprocessing)
+cli.add_command(do_split_in_three)
 cli.add_command(do_training)
 cli.add_command(do_evaluation)
 

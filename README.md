@@ -27,4 +27,5 @@ The model will be finally wrapped in a microservice and deployed to a Kubernetes
 
 # References
 [1] Torres, A., Cilloniz, C., Niederman, M.S. et al. Pneumonia. Nat Rev Dis Primers 7, 25 (2021). https://doi.org/10.1038/s41572-021-00259-0
+
 [2] Nishio, M., Kobayashi, D., Nishioka, E. et al. Deep learning model for the automatic classification of COVID-19 pneumonia, non-COVID-19 pneumonia, and the healthy: a multi-center retrospective study. Sci Rep 12, 8214 (2022). https://doi.org/10.1038/s41598-022-11990-3

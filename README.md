@@ -13,7 +13,7 @@ The model will be finally wrapped in a microservice and deployed to a Kubernetes
 **[Note] This is an on-going project. Check out the `dev` branch for updates.**
 
 # Roadmap
-- [ ] Three-way split of dataset (train, val, and test).
+- [x] Three-way split of dataset (train, val, and test).
 - [ ] Custom DicomDataset and DataLoader
 - [ ] CircleCI for automated tests
 - [ ] Code coverage using Codecov

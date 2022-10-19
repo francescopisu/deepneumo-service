@@ -25,6 +25,9 @@ The model will be finally wrapped in a microservice and deployed to a Kubernetes
 - [ ] Model external validation
 - [ ] Deploy using Seldon
 
+# Acknowledgements
+- [`protein-classification-service`](https://github.com/BenTenmann/protein-classification-service) by Ben Tenmann for the overall project structure.
+
 # References
 [1] Torres, A., Cilloniz, C., Niederman, M.S. et al. Pneumonia. Nat Rev Dis Primers 7, 25 (2021). https://doi.org/10.1038/s41572-021-00259-0
 

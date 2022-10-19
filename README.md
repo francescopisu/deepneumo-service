@@ -6,7 +6,7 @@ Pneumonia is a common acute respiratory infection that affects tge alveoli and d
 
 This project implements EfficientNet-B5 with cutmix augmentation as proposed by Nishio et al.[2] using PyTorch.
 
-The model will be traindef using the RSNA Pneumonia Detection Challenge, available in raw form from [Kaggle](https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge/data).
+The model will be trained using the RSNA Pneumonia Detection Challenge, available in raw form from [Kaggle](https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge/data).
 
 The model will be finally wrapped in a microservice and deployed to a Kubernetes cluster using Seldon. Users will be able to send post requests for online predictions (both single and batch requests) and receive classification for the CXR.
 
